@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="vice-nitial-scale=1.0">
+    <title>Items Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div.conteiner {
+            background-color: rgb(187, 187, 187);
+            margin: 20px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+        }  
+        
+        #cxa {
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 150px;*/
+
+            flex: 0 1 150px;
+        }
+
+        #cxb {
+            /*flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 150px;*/
+
+            flex: 1 0 150px;
+        }
+
+        #cxc {
+            /*flex-grow: 0;
+            flex-shrink: 2;
+            flex-basis: 150px;*/
+
+            flex: 0 2 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">A</div>
+        <div class="item" id="cxb">B</div>
+        <div class="item" id="cxc">C</div>
+    </div>
+</body>
+</html>

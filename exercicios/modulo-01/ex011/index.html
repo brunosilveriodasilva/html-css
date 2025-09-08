@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediadas de HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>TEnte abrir essa imagem em varios dispositivos, ou almente a resolução</p> 
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagems/foto300.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagems/foto700.png" type="image/png">
+        <img src="imagems/foto1000.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Usando Audio</h1>
+    <p>vamos aprender a reproduzir audio</p>
+    <audio src="midia/guanacast-33 (1).mp3" controls autoplay></audio>
+    <!--HP WAV OGG-->
+
+    <p><br>Outro jeito de por audio</p>
+    <audio controls preload="metadata">
+        <source src="midia/guanacast-33 (1).mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33 (1).mp3" type="audio/wav">
+        <source src="midia/guanacast-33 (1).mp3" type="audio/ogg">
+        <p>Seu navegador não suporta o elemento de áudio. <a href="midia/guanacast-33 (1).mp3"></a>Clique aqui para baixar o arquivo</p>
+    </audio>
+   
+</body>
+</html>

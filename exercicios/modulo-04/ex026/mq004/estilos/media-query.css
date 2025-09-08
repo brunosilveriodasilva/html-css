@@ -1,0 +1,84 @@
+@charset "UTF";
+
+@media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: none; /* não compativel com impressão; */
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Essas impressão foi feita através do site www.fds.com.br';
+        text-decoration: none;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone { display: none;}
+
+    img#tablet { display: none;}
+
+    img#print { display: block;}
+
+    img#pc { display: none;}
+
+    img#tv { display: none;}
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) { /*tablet*/
+    body {
+        background-image: url(../imagems/back-tablet.jpg);
+    }
+
+    img#phone { display: none;}
+
+    img#tablet { display: block;}
+
+    img#print { display: none;}
+
+    img#pc { display: none;}
+
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) { /*desktop*/
+    body {
+        background-image: url(../imagems/back-pc.jpg);
+    }
+
+    img#phone { display: none;}
+
+    img#tablet { display: none;}
+
+    img#print { display: none;}
+
+    img#pc { display: block;}
+
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 1441px) { /*big screens*/
+    body {
+        background-image: url(../imagems/back-tv.jpg);
+    }
+
+    img#phone { display: none;}
+
+    img#tablet { display: none;}
+
+    img#print { display: none;}
+
+    img#pc { display: none;}
+
+    img#tv { display: block;}
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+h1#principal {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p#principal {
+
+
+}
+
+.conteiner {
+    padding: 5px;
+    background-color: ;
+
+    outline-style: blue;
+}

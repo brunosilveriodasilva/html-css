@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        #principal {
+            text-align: center;
+        }
+
+        fieldset {
+            border-width: 5px;
+        }
+
+        legend {
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Exemplo de Formulário</h1>
+    <form action="" method="POST">
+        <fieldset>
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+           
+            <p>
+                <label for="inivel">Níveis de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+            </p>
+
+            <p>
+                <label for="ifoto">Foto:  </label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="  Enviar  ">
+            <input type="reset" value="  Limpar  ">
+        </p>
+    </form>
+
+
+    
+</body>
+</html>

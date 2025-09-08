@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div.conteiner {
+            background-color: rgb(187, 187, 187);
+            margin: 10px;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: flex-end;
+        }
+
+        div.item {
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #cxa {
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+
+            flex: initial;
+
+            margin-bottom: 100px;
+        }
+
+        #cxb {
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+
+            flex: auto;
+
+            margin-bottom: 100px;
+        }
+
+        #cxc {
+            /*flex-grow: 1;
+            flex-shrink: 2;
+            flex-basis: 150px;*/
+
+            flex: 1 2 150px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">A Lorem ipsum dolor</div>
+        <div class="item" id="cxb">B consectetur adipisicing elit. At reiciendis</div>
+        <div class="item" id="cxc">C consectetur adipisicing elit.</div>
+    </div>
+</body>
+</html>

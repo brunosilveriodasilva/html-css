@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: beige;
+        }
+        
+        h1 {
+            text-align: center;
+            background-color: blue;
+            color: white;
+        }
+
+        li {
+            color: rgb(0, 0, 0);
+        }
+
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight:  bold;
+        }
+
+        a:visited {
+            color: darkred
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #1900ff;
+        }
+
+        .especial {
+            background-color: rgba(117, 65, 65, 0.466);
+        }
+
+        a::before {
+            content: '→ ';
+        }
+
+        a::after {
+            content: ' ←';
+        }
+
+        
+  
+      
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" rel="externe">Repositorio Github</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="externe">Canal do YT</a></li>
+        <li><a href="https://www.cursoemvideo.com/" class="especial" target="_blank" rel="externe">Site do Curso em Video</a></li>
+    </ul>
+    
+    
+    
+    <!--a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }-->
+</body>
+</html>

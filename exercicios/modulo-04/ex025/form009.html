@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        #principal {
+            text-align: center;
+        }
+
+        fieldset {
+            border-width: 5px;
+        }
+
+        legend {
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">Exempl de Formulário</h1>
+
+    <form action="" method="get">
+        
+        <p>
+            <label for="inum">Número: </label>
+            <input type="range" name="num" id="inum" min="0" max="10" oninput="ival.innerHTML = Number(inum.value)">
+            <output id="ival">5</output>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

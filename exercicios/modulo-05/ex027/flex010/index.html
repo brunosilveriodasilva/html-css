@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="vice-nitial-scale=1.0">
+    <title>Items Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div.conteiner {
+            background-color: rgb(247, 131, 131);
+            margin: 20px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: rgba(0, 255, 255, 0.534);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+        
+        #cxa {
+            flex-shrink: 10;
+            flex-grow: 1;
+        }
+        
+        #cxb {
+            flex-shrink: 0;
+            flex-grow: 1;
+        }
+
+        #cxc {
+            flex-shrink: 10;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxa">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio beatae perferendis eveniet assumenda, dolor laudantium facilis voluptatibus numquam ab. Nesciunt aliquam iste quos. Odit, et quaerat alias voluptate voluptates totam.</div>
+        <div class="item" id="cxb">B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos necessitatibus unde perferendis, repellendus enim laborum facere corrupti maiores. Corporis quae ea reiciendis sequi ab nihil itaque architecto similique, et nemo.</div>
+        <div class="item" id="cxc">C Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, beatae doloremque? Quia voluptatibus, sint accusamus natus fugit quos dolorem minus quasi alias tenetur? Autem magnam quae velit praesentium nihil doloremque.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        body, html {
+            background-color: beige;
+            
+        }
+
+        div.conteiner {
+            background-color: rgb(185, 184, 184);
+            width: 100vw;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .items {
+            padding: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #cxa {
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            flex-flow: column;
+        }
+
+        #cxa {
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 150px;*/
+
+            flex: 0 1 150px;
+        }
+
+        #cxb {
+            /*flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 150px;*/
+
+            flex: 1 0 150px;
+        }
+
+        #cxc {
+            /*flex-grow: 0;
+            flex-shrink: 2;
+            flex-basis: 150px;*/
+
+            flex: 0 2 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="items" id="cxa">A Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quibusdam fugit cumque voluptates placeat rerum odio magni velit impedit autem accusamus iusto facere soluta eius ducimus, earum commodi culpa ab!</div>
+        <div class="items" id="cxb">B 
+        </div>     
+        <div class="items" id="cxc">C Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ad unde, commodi at illum eni.</div>
+        <div class="items" id="cxd">D</div>    
+    </div>
+
+    
+</body>
+</html>

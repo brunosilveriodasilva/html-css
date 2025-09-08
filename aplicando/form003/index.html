@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praticando</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Honk&family=Nata+Sans:wght@100..900&family=Passion+One:wght@400;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Nata Sans',Helvetica, sans-serif;
+        background-color: #7672e6;
+    }
+
+    div#size {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    #counteiner {
+        margin: 0px;
+        
+    }
+
+    div#titulos {
+        background-color: white;
+        border-radius: 10px 10px 0px 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.164);
+        padding: 20px;
+        text-align: center;
+    }
+
+    main {
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    form {
+        text-align: center;
+    }
+
+    form>p#titulo {
+        margin-bottom: 20px;
+    }
+
+    form>p {
+        font-size: 1.2em;
+        margin: 5px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 10px auto;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-size: 17px;
+        display: block;
+    }
+    
+    #idata {
+        border: none;
+    }
+
+    .box-dados {
+        width: 100%;
+        max-width: 400px;
+        height: 55px;
+        padding: 10px;
+        box-sizing: border-box;
+        margin: 10px auto;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-size: 17px;
+        display: block;
+    }
+
+    input.botoes {
+        width: 100%;
+        max-width: 400px;
+        height: 50px;
+        
+        border-radius: 5px;
+        margin-top: 5px;
+
+        font-weight: bolder;
+        font-size: 17px;
+        background-color: #4844cc;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        color: white;
+        border: none;
+    }
+
+    .box, .box-dados, .botoes {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .botoes:hover {
+        background-color: #3231a5;
+    }
+
+    footer {
+        background-color: black;
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div id="counteiner">
+        <div id="size">
+            <main>
+            <div id="titulos">
+                <h1>Formulário</h1>
+                <p></p>
+            </div>
+            
+                <form action="" method="post" target="_blank" autocomplete="on">
+                    <p id="titulo">
+                        Coloque Seus Dados Abaixo
+                    </p>
+
+                    <p>
+                        <fieldset class="box" id="box-sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="sexo" id="isxmac"><label for="isxmac">Masculino <br></label>
+                            <input type="radio" name="sexo" id="isxfem"><label for="isxmac">Feminino</label>
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <fieldset class="box" id="box-data">
+                            <legend>Data de Nascimento:</legend>
+                            <label for="idata"></label>
+                            <input type="date" name="data" id="idata">
+                        </fieldset>
+                    </p>
+
+                    <p>
+                        <label for="inome"></label>
+                        <input type="text" name="nome" id="inome" placeholder="*Nome" class="box-dados">
+                    </p>
+
+                    <p>
+                        <label for="iemail"></label>
+                        <input type="email" name="email" id="iemail" placeholder="*E-mail"class="box-dados">
+                    </p>
+
+                    <p>
+                        <label for="itel"></label>
+                        <input type="tel" name="tel" id="itel" placeholder="*Telefone (xx)xxxx-xxxx" required pattern="\(\d{2}\)\d{4,5}-\d{4}" class="box-dados">
+                    </p>
+            
+                    <p>
+                        <input type="submit" value="Enviar" class="botoes"> <br>
+                        <input type="reset" value="Limpar" class="botoes">
+                    </p>
+                </form>
+            </main>
+    </div>
+    <footer>
+        <p>Site feito por: Bruno Silverio da Silva</p>
+    </footer>
+</body>
+</html>

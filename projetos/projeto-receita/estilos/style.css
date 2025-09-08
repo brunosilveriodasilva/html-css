@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root {
+    --o0: #F28C28;
+    --y1: #FFD74B;
+    --w2: #FFFFFF;
+    --b3: #1A1A1A;
+    --m4: #5A3D2B;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, #f5cf7e 75%, #8f7742);
+}
+
+header {
+    padding: 30px;
+    border: 1px solid #493122;
+    
+    text-align: center;
+}
+
+header>h1 {
+    padding-bottom: 5px;
+    font-family: "Dancing Script", cursive, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+header>p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+div#img {
+    background-image: url("/imagems/cenoura-retrato.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #493122;
+    box-shadow: inset 0px 0px 15px #18100bc9;
+    
+    height: 450px;
+    width: 100%;
+}
+
+main {
+    background-color: #e9edee;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    margin: auto;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+main, footer, footer, header {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+}
+
+main>h1 {
+    padding-top: 5px;
+}
+
+main>h2 {
+    padding-top: 20px;
+}
+
+main>p {
+    padding: 0px 30px 30px 30px;
+    width: 415px;
+}
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    text-align: center;
+}

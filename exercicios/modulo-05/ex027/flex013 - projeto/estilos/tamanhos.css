@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+
+nav>a {
+    flex: 0 0 80px;
+}
+
+@media screen and (min-width: 664px) {
+    nav>a#esconder {
+        align-self: flex-start;
+        display: block;
+        margin-right: auto;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 745px) {
+    nav>a {
+        flex-basis: 90px;
+        padding: 12px;
+    }
+
+    main {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 845px) {
+    nav>a {
+        flex-basis: 100px;
+        padding: 15px;
+    }
+
+    main {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    nav>a {
+        flex-basis: 110px;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    nav>a {
+        flex-basis: 120px;
+    }
+
+    main {
+        width: 65%;
+    }
+}

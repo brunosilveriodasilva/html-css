@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 2px solid black;
+            height: 120px;
+            display: flex;
+            flex-flow: row wrap;
+            
+            justify-content: center;
+        }
+
+        .container.baseline {
+            align-items: baseline;
+        }
+
+        .container.flexstart {
+            align-items: flex-start;
+        }
+
+        .item {
+            padding: 5px;
+            background: lightblue;
+            margin: 5px;
+        }
+
+        .item.big {
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Exemplo baseline:</p>
+        <div class="container baseline">
+        <div class="item">Texto</div>
+        <div class="item big">Grande</div>
+        <div class="item">Normal</div>
+    </div>
+
+<p>Exemplo flex-start:</p>
+    <div class="container flexstart">
+        <div class="item">Texto</div>
+        <div class="item big">Grande</div>
+        <div class="item">Normal</div>
+    </div>
+        
+</body>
+</html>

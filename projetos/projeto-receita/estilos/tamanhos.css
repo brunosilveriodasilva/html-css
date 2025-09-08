@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) {
+    main {
+        width: 95%;
+        border-radius: 10px;
+    }
+
+    footer {
+        margin-top: 15px;
+    }
+
+    div#img {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        width: 80%;
+    }
+
+    div#img {
+        background-image: url("/imagems/cinza.jfif");
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        width: 65%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header>h1 {
+        font-size: 2.5em;
+    }
+    main {
+        width: 60%;
+    }
+}
