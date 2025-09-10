@@ -28,6 +28,10 @@ header {
     justify-content: space-between;
 }
 
+header>div#title {
+    text-align: center;
+}
+
 header>div>img {
     height: 50px;
     width: 50px;
