@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template: 100px 50px 1fr auto / repeat(7, 1fr);
+    grid-auto-rows: 1fr;
+}
+
+header {
+    background-image: linear-gradient(to right, #202020, #000000);
+    padding: 20px;
+    color: #e4e9e9;
+    grid-row: 1/2;
+    grid-column: 1/8;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header>div>img {
+    height: 50px;
+    width: 50px;
+} 
+
+nav {
+    background-image: linear-gradient(to right, #272727, #111111);
+    color: #e4e9e9;
+    grid-row: 2/3;
+    grid-column: 1/8;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+} 
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.288);
+    color: #d1d6d6;
+    margin: 20px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+
+nav>ul>li:hover {
+    transform: scale(1.1);
+}
+
+nav>ul>li>a:hover {
+    color: #ffffff;
+}
+
+main {
+    background-color: rgb(207, 207, 207);
+    grid-row: 3/4;
+    grid-column: 1/8;
+
+    display: flex;
+    flex-flow: row wrap-reverse;
+}
+
+section#principal {
+    background-image: linear-gradient(to bottom, #bec4c4, #9fa3a3);
+    border: 1px solid #0000004f;
+    flex: 1 1 500px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+}
+
+section#principal>h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 1.9em;
+    text-shadow: 2px 2px 4px rgba(117, 116, 116, 0.281);
+}
+
+.comidas {
+    background-image: linear-gradient(to right, #f0f8f8, #dadfdf);
+    padding: 15px;
+    margin: 0px 15px 15px 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+div.txtcmd {
+    flex: 1 1 auto;
+    margin-right: 20px;
+}
+
+div.txtcmd>h4 {
+    font-family: "Edu NSW ACT Cursive", cursive;
+}
+
+.comidas>img {
+    width: 200px;
+    margin-left: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+    flex: 0 1 auto;
+}
+
+section#secundario {
+    background-image: linear-gradient(to bottom, #9fa3a3,#858b8b);
+    padding: 20px;
+    color: #202020;
+    border: 1px solid #0000004f;
+    border-bottom: 1px solid #0000004f;
+    
+    flex: 1 1 170px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+section#secundario>p {
+    margin-top: 10px;
+}
+
+section#secundario>div#img{
+    background-image: url("imagems/imagem-resurante.png");
+    background-position: center;
+    background-size: cover;
+    border: 1px solid rgb(87, 87, 87);
+    width: 300px;
+    height: 500px;
+    margin-top: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #202020, #000000);
+    color: #e4e9e9;
+    padding: 20px;
+    font-size: 1.2em;
+    grid-column: 1/8;
+
+    display: flex;
+    justify-content: center;
+}
+
+p#fcenter {
+    margin-top: 5px;
+    text-align: center;
+}
+
+#footer>p>a {
+    text-decoration: none;
+    color: #FD3D65;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+#footer>p>a:hover {
+    color: #c7314f;
+} 
+
+#footer>p>a#face {
+    color: #4715d1;
+}
+
+#footer>p>a#face:hover {
+    color: #321091;
+}
