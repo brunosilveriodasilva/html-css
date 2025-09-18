@@ -1,0 +1,47 @@
+@media screen and (max-width: 660px) {
+    section#ficha {
+        flex-flow: column nowrap;
+    }
+
+    div#detalhes {
+        margin: -25px 0px 0px 15px;
+        justify-self: center;
+    }
+
+    div#social {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    div#perfio>img {
+        width: 220px;
+        height: 220px;
+        transition: all 0.3s ease;
+    }
+
+    div#perfio>h1 {
+        font-size: 30px;
+        transition: all 0.3s ease;
+    }
+
+    div#detalhes {
+        font-size: 19px;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    div#perfio>img {
+        width: 240px;
+        height: 240px;
+    }
+
+    div#perfio>h1{
+        font-size: 40px;
+    }
+
+    div#detalhes {
+        font-size: 21px;
+    }
+}
