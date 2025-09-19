@@ -14,6 +14,27 @@
   --fundo-card: #1a1a1a;
   --azul-tema: #1e90ff;
   --fonte-logo: "Russo One", sans-serif;
+  --gradiente-texto: linear-gradient(90deg, #1872cc, #135597);
+  --gradiente-hover: linear-gradient(90deg, #1e90ff, #13579b);
+  --transition-padrao: all 0.3s ease;
+}
+
+.text-gradient {
+  background: var(--gradiente-texto);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--fonte-logo);
+}
+
+.text-gradient:hover {
+  text-shadow: 0px 0px 5px #1e8fff2a;
+  background: var(--gradiente-hover);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: var(--transition-padrao);
 }
 
 body {
@@ -22,6 +43,7 @@ body {
   background-color: var(--fundo-principal);
   color: var(--texto);
 }
+
 
 header {
   background: linear-gradient(to right, #111111, #000000);
@@ -36,23 +58,8 @@ header {
 }
 
 header>#logo {
-  background: linear-gradient(90deg, #1872cc, #135597);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--fonte-logo);
   font-size: 2em;
   justify-content: flex-start;
-}
-
-header>#logo:hover {
-  text-shadow: 0px 0px 5px #1e8fff2a;
-  background: linear-gradient(90deg, #1e90ff, #13579b);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 nav#menu ul{
@@ -83,7 +90,7 @@ main {
   display: grid;
   grid-template: auto / auto;
   place-items: center;
-  transition: all 0.5s ease;
+  transition: var(--transition-padrao);
 }
 
 div#perfio>img {
@@ -96,24 +103,9 @@ div#perfio>img {
 }
 
 div#perfio>h1 {
-  background: linear-gradient(90deg, #1872cc, #135597);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: var(--fonte-logo);
   margin-top: 20px;
   font-size: 30px;
   line-height: 1.0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-div#perfio>h1:hover {
-  text-shadow: 0px 0px 5px #1e8fff2a;
-  background: linear-gradient(90deg, #1e90ff, #13579b);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 div#perfio {
@@ -126,7 +118,7 @@ div#perfio {
 
 
 div#detalhes {
-  background: linear-gradient(to right, rgb(20, 20, 20), var(--fundo-principal));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.507), var(--fundo-principal));
   position: relative;
   padding: 10px 0px 10px 15px;
   margin-right: 50px;
@@ -158,10 +150,6 @@ div#social {
   user-select: none;
 }
 
-a:hover {
-  transform: scale(1.1);
-}
-
 div#social>a {
   cursor: pointer;
   color: white;
@@ -171,7 +159,7 @@ div#social>a {
 div#social>a:hover {
   color: #1872cc;
   text-shadow: 1px 1px 3px #1872cc73;
-  transition: all 0.3s ease;
+  transition: var(--transition-padrao);
 }
 
 footer {
