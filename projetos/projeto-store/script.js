@@ -11,6 +11,14 @@ const urls = [
     'https://www.apple.com/br/airpods-max/?afid=p240%7Cgo~cmp-23006674489~adg-188742252161~ad-778112783723_kwd-50006603375~dev-c~ext-286846637157~prd-~mca-~nt-search&cid=wwa-br-kwgo-airpods-noncore_airpodsfamily-airpodsfamily-airpodsfamily_hero_avail_100825-AirPods-AirPods-airpods',
 ];
 
+(function disableScroll() {
+    function preventDefault(e) {
+        e.preventDefault();
+    }
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('touchmove', preventDefault, { passive: false });
+})();
+
 let active = 0;
 const total = items.length;
 let timer;
