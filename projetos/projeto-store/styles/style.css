@@ -291,7 +291,7 @@ header nav ul li:hover::after {
 
 .indicators {
     position: absolute;
-    bottom: 105px;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
