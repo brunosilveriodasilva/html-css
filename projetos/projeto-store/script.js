@@ -16,7 +16,12 @@ const urls = [
         e.preventDefault();
     }
     document.body.style.overflow = 'hidden';
+    window.addEventListener('wheel', preventDefault, { passive: false });
     window.addEventListener('touchmove', preventDefault, { passive: false });
+    window.addEventListener('keydown', function(e) {
+        const keys = ['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','PageUp','PageDown','Home','End'];
+        if (keys.includes(e.code)) preventDefault(e);
+    }, { passive: false });
 })();
 
 let active = 0;
