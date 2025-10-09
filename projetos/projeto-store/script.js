@@ -82,4 +82,3 @@ smButtons.forEach((button, index) => {
         }
     })
 });
-
