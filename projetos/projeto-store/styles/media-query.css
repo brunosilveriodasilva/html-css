@@ -49,6 +49,10 @@
     .arrows {
         width: 60%;
     }
+
+    .indicators {
+        bottom: 140px;
+    }
 }
 
 @media (max-width: 750px) {
