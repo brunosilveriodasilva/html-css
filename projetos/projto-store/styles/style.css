@@ -17,9 +17,37 @@ body {
     grid-template-rows: auto 1fr;
 }
 
+.circle {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+}
+
+#circle1 {
+    background: linear-gradient(to bottom right,rgba(15, 15, 30, 0), rgba(0, 247, 255));
+    border-right: 1px solid rgba(15, 15, 30);
+    border-bottom: 1px solid rgba(15, 15, 30);
+    border-bottom-right-radius: 90%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+#circle2 {
+   background: linear-gradient(to top left,rgba(15, 15, 30, 0), rgba(0, 247, 255));
+    border-top: 1px solid rgba(15, 15, 30);
+    border-left: 1px solid rgba(15, 15, 30);
+    border-top-left-radius: 80%;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+    right: 0;
+    bottom: 80px;
+}
+
 header {
-    width: 95vw;
+    width: 100vw;
     padding: 20px 50px;
+    border-bottom: 2px solid #0d0d1a;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.267);
     display: flex;
     justify-content: space-between;   
     align-items: center;
@@ -68,6 +96,7 @@ header nav ul li:hover::after {
 }
 
 .container::before {
+    pointer-events: none;
     content: '';
     position: absolute;
     width: 500px;
@@ -91,11 +120,11 @@ header nav ul li:hover::after {
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    transform: translateY(-70px);
 }
 
 .item {
     position: absolute;
-    margin-top: -70px;
     inset: 0;
     display: flex;
     justify-content: center;
@@ -128,7 +157,7 @@ header nav ul li:hover::after {
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
     z-index: 2;
     transform: translateX(200px);
-    transition: transform 0.4 ease-in-out;
+    transition: transform 0.4s ease-in-out;
     opacity: 0;
 }
 
@@ -173,7 +202,6 @@ header nav ul li:hover::after {
 .container-btn {
     display: grid;
     justify-content: start;
-    z-index: 10;
 }
 
 .btn { 
@@ -209,6 +237,10 @@ header nav ul li:hover::after {
     z-index: 1;
     user-select: none;
     transform: translate(-50%, -50%);
+}
+
+#arrows, #btn {
+      z-index: 10;
 }
 
 .arrows img {

@@ -12,18 +12,13 @@
         flex-direction: column;
     }
 
-    .container-btn {
-        display: grid;
-        justify-content: center;
-    }
-
     .content {
         height: auto;
         margin-top: -50px;
         padding: 0 20px;
         align-items: center;
     }
-    
+
     .product-img {
         width: 400px;
         height: 400px;
@@ -44,6 +39,11 @@
 
     .description {
         display: none;
+    }
+    
+    .container-btn {
+        display: grid;
+        justify-content: center;
     }
 
     .arrows {
