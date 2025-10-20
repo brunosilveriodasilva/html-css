@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll, allow vertical */
+    font-family: "Poppins", sans-serif;
+}
+
+main.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.cont-sec {
+    background: linear-gradient(150deg, #0a87a1 0%, #090979 50%, #020021 100%);
+    height: 100vh;
+    border-right: 1.5px solid #020018;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    color: white;
+    -webkit-text-stroke: 0.5px #000; /* Thinner stroke for better visibility */
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.1s ease;
+    z-index: 10;
+}
+
+.logo > h1 {
+    font-size: 2.5rem;
+}
+
+.logo > img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.7rem;
+    transform: translateY(-0.5px);
+}
+
+.container-img {
+    /* Empty; add background-image if needed, e.g., background-image: url('img/background.jpg'); */
+    height: 100%;
+}
+
+.cont-form {
+    background: linear-gradient(to right bottom, white 0%, rgb(231, 231, 231) 50%, rgb(216, 216, 216) 100%);
+    border-left: 1.5px solid #020018;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.cont-sec, .cont-form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    width: 100%;
+    max-width: 250px;
+    margin: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: max-width 0.3s ease;
+}
+
+.items-form {
+    display: grid;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.item-form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item-form > label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.item-form > input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc; /* Fixed invalid border */
+    transition: border-color 0.3s ease, transform 0.1s linear;
+    outline: none;
+}
+
+.item-form > input:focus {
+    border-color: #0a87a1;
+    box-shadow: 0 0 5px rgba(10, 135, 161, 0.5);
+}
+
+.item-form > input:invalid {
+    border-color: red; /* Simple validation styling without :has() */
+}
+
+.item-form > input:active {
+    transform: scale(1.02);
+}
+
+.button-sub > input {
+    background: linear-gradient(90deg, rgba(5, 0, 23, 1) 0%, rgba(6, 6, 71, 1) 52%, rgba(0, 98, 117, 1) 100%);
+    width: 100%;
+    margin-top: 7px;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+    border: 2px solid #020018;
+    border-radius: 5px;
+    box-shadow: 20px 20px 37px -15px rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-sub > input:hover {
+    background: linear-gradient(90deg, rgb(3, 0, 12) 0%, rgb(4, 4, 49) 52%, rgb(0, 85, 102) 100%);
+}
+
+.button-sub > input:active {
+    transform: scale(0.98); /* Slightly less aggressive scale */
+}
+
+footer {
+    position: fixed; /* Changed to fixed for better mobile behavior */
+    bottom: 0.7rem;
+    left: 50%;
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0 7px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: opacity 0.1s ease;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent bg for visibility */
+    color: white;
+    padding: 10px 0;
+}
+
+.label {
+    color: white;
+}
+
+.name {
+    margin-left: 1rem;
+}

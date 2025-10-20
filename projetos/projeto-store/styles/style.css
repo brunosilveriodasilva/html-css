@@ -97,7 +97,7 @@ header nav ul li:hover::after {
 }
 
 .container {
-    height: 100vh;
+    height: 100dvh;
     position: relative;
     background: linear-gradient(135deg, #0f0f1e 0%, #171727 100%);
 }

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --transition-default: all 0.3s ease;
+    --header-height: 87px;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.404);
+}
+
+.scroll-wrapper {
+    height: 100dvh;           
+    overflow-y: scroll;   
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.sec-default {
+    max-width: 1200px;
+}
+
+header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(166, 238, 245, 0.5) 50%,
+        rgba(255, 255, 255, 0.6) 100%
+    );
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    width: 100%;
+    height: var(--header-height);
+    padding: 2rem;
+    border-bottom: 1px solid rgb(147, 210, 216);
+    box-shadow: 10px 10px 46px 0px rgba(147, 210, 216, 0.5);
+    -webkit-box-shadow: 10px 10px 46px 0px rgba(147, 210, 216, 0.5);
+    -moz-box-shadow: 10px 10px 46px 0px rgba(147, 210, 216, 0.5);
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+header section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    background: linear-gradient(90deg,rgba(3, 0, 28, 1) 0%, rgba(3, 3, 84, 1) 35%, rgba(4, 107, 128, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: var(--transition-default);
+}
+
+header .logo:hover {
+    background: linear-gradient(90deg,rgb(13, 0, 134) 0%, rgb(5, 5, 155), rgb(5, 145, 173) 100%);
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+}
+
+header .logo:active {
+    transform: scale(1.1);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    transform: translateY(-.1rem);
+}
+
+header nav ul li  {
+    position: relative;
+    background: linear-gradient(90deg,rgba(2, 0, 23, 1) 0%, rgba(4, 4, 46, 1) 35%, rgba(3, 52, 61, 1) 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+header nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;    
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(90deg,rgba(2, 0, 23, 1) 0%, rgba(4, 4, 46, 1) 35%, rgba(3, 52, 61, 1) 100%);
+    width: 0;
+    height: .2rem;    
+    border-radius: 2rem;
+    transition: width 0.3s ease;
+}
+
+header nav ul li:hover::after {
+    width: 100%;
+}
+
+.header-space {
+    height: var(--header-height);
+}
+
+main section {
+    margin: 3rem;
+    font-size: 1.5rem;
+}

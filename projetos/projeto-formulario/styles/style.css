@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+main.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cont-sec {
+    background: linear-gradient(150deg,#0a87a1 0%, #090979 50%, #020021 100%);
+    height: 100vh;
+    border-right: 1.5px solid #020018;
+}
+
+.logo {
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: opacity 0.1s ease;
+}
+
+.logo>h1 {
+    font-size: 2.5rem;
+}
+
+.logo>img {
+    width: 2rem;
+    height: 2rem;
+    margin-left: .7rem;
+    transform: translateY(-.5px);
+}
+
+.cont-form {
+    background: linear-gradient(to right bottom,white 0%, rgb(231, 231, 231) 50%, rgb(216, 216, 216) 100%);
+    border-left: 1.5px solid #020018;
+    display: flex;
+    align-items: center;
+}
+
+.cont-sec, .cont-form {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    width: 250px;
+    margin: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+    transition: width 0.3s ease;
+}
+
+.item-form>label {
+    font-weight: 500;
+}
+
+.item-form>input {
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 1;
+    transition: border-color 0.3s ease, transform 0.1s linear;
+    outline: none;
+}
+
+.items-form {
+    display: grid;
+    gap: 7px;
+}
+
+.item-form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item-form > input:invalid {
+    border-color: red;
+}
+
+.item-form > input:focus {
+    border-color: #0a87a1;
+    box-shadow: 0 0 5px rgba(10, 135, 161, 0.5);
+}
+
+.item-form>input:active {
+    transform: scale(1.02);
+    transition: transform 0.1 linear;
+}
+
+.item-form>input:has(input:invalid) {
+    border: 2px solid red;
+}
+
+
+.button-sub>input {
+    background: linear-gradient(90deg,rgba(5, 0, 23, 1) 0%, rgba(6, 6, 71, 1) 52%, rgba(0, 98, 117, 1) 100%);
+    width: 265px;
+    margin-top: 7px;
+    padding: .5rem 1rem .5rem 1rem;
+    color: white;
+    font-size: 1.3rem;
+    border: 2px solid #020018;
+    border-radius: 5px;
+    box-shadow: 20px 20px 37px -15px rgba(0, 0, 0, 0.87);
+    transition: all 0.3 ease;
+}
+
+.button-sub>input:hover {
+    background: linear-gradient(90deg,rgb(3, 0, 12) 0%, rgb(4, 4, 49) 52%, rgb(0, 85, 102) 100%);
+}
+
+.button-sub>input:active {
+    transform: scale(0.9);
+    transition: all 0.3 ease;
+}
+
+footer {
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-left: 7px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateX(-50%);
+    transition: opacity 0.1s ease;
+}
+
+.label {
+    color: white;
+}
+
+.name {
+    margin-left: 1rem;
+}

@@ -1,0 +1,49 @@
+@media (max-width: 950px) {
+    .about .row {
+        display: flex;
+        flex-flow: row wrap-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .conatainer-about img {
+        width: 90%;
+        justify-content: center;
+    }
+ 
+}
+
+@media (min-width: 950px) {
+    .title {
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .home-container section {
+        justify-content: center;
+    }
+
+    .content {
+        margin: 1rem;
+    }
+    
+    .content h3 {
+         font-size: 3rem;
+    }
+
+    .content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 596px) {
+    .navbar {
+        margin: 0 3rem;
+    }
+}
+
+@media (max-width: 635px) {
+   
+}

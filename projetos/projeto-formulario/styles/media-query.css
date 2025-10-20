@@ -1,0 +1,27 @@
+@media (max-width:670px) {
+    footer {
+        opacity: 0;
+    }
+
+    .cont-form {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        border: 0;
+    }
+}
+
+@media (max-width:610px) {
+    .logo {
+        display: none;
+    }
+
+    .cont-sec {
+        display: none;
+    }
+
+    .cont-form {
+        width: 100vw;
+        height: 100vh;
+    }
+}
