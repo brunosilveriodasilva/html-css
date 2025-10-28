@@ -94,10 +94,6 @@ header nav ul li::after {
 
 header nav ul li:hover::after {
     width: 100%;
-}
-
-.container {
-    height: 100dvh;
     position: relative;
     background: linear-gradient(135deg, #0f0f1e 0%, #171727 100%);
 }
