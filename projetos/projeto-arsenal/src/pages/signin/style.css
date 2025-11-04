@@ -96,6 +96,7 @@ main {
 }
 
 .inputs label {
+  margin-bottom: 3px;
   font-size: 1.5rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
@@ -104,14 +105,20 @@ main {
 }
 
 .inputs input {
-  background: rgb(235, 233, 233);
-  padding: 1.5rem;
+  background: #f1f3f5;
+  padding: 1.2rem;
+  font-size: 1.4rem;
   box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.11);
   -webkit-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.11);
   -moz-box-shadow: 10px 10px 41px 0px rgba(0, 0, 0, 0.11);
   width: 100%;
   border-radius: 1rem;
   border: 1px solid rgba(128, 128, 128, 0.5);
+  transition: var(--transition-base);
+}
+
+.inputs input:hover {
+  border: 1px solid var(--azul-roxo);
 }
 
 .email {
