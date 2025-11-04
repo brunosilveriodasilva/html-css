@@ -29,7 +29,8 @@ header {
   position: fixed;
   width: 100vw;
   color: var(--branco-suave);
-  padding: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   font-size: 1.6rem !important;
   font-family: "Poppins", sans-serif;
   backdrop-filter: blur(10px); 
@@ -97,14 +98,15 @@ nav ul li {
 nav ul li::before {
   content: "";
   position: absolute;
+  background: var(--branco-suave);
   width: 0;
   bottom: 0;
-  left: 0;
+  left: 50%;
   right: 0;
   height: 2px;
   margin-top: 2px;
-  background: var(--branco-suave);
   border-radius: 0.5rem;
+  transform: translateX(-50%);
   transition: var(--transition-base);
 }
 
@@ -139,18 +141,35 @@ nav ul li:hover::before {
 
 .btn-login:hover {
   background: rgba(33, 115, 238, 0.4);
-  transform: translateY(-2px);
 }
 
 .btn-signup {
+  position: relative;
   height: 100%;
   width: 50%;
   align-self: center;
+  display: flex;
+  justify-content: center;
   transition: var(--transition-base);
 }
 
-.btn-signup:hover {
-  color: rgb(52, 126, 238);
+.btn-signup::before {
+  content: '';
+  position: absolute;
+  background: var(--branco-suave);
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 2px;
+  margin-top: 2px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition: var(--transition-base);
+}
+
+.btn-signup:hover::before {
+  width: 80%;
 }
 
 .hero-img {
@@ -167,11 +186,10 @@ nav ul li:hover::before {
 }
 
 .hero-content {
-  border-radius: 1rem;
+  max-width: var(--width-padrao);
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 30%;
-  padding: 1rem;
   color: var(--branco-suave);
   transition: all 0.1s ease;
 }

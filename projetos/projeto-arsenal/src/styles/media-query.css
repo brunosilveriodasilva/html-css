@@ -1,4 +1,57 @@
+@media (max-width: 550px) {
+  nav {
+    display: none;
+  }
+
+  .hero-content {
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+/* min-width */
+
+@media (min-width: 0px) {
+  .header-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .header-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+} 
+
+@media (min-width: 700px) {
+  .header-content {
+    padding-left: 4.2rem;
+    padding-right: 4.2rem;
+  }
+
+  nav ul {
+    gap: 1.5rem;
+  }
+}
+
 @media (min-width: 800px) {
+  .header-content {
+    padding-left: 4.4rem;
+    padding-right: 4.4rem;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
   .hero-content {
     padding: 1.5rem;
     margin-right: 35%;
@@ -14,22 +67,33 @@
 }
 
 @media (min-width: 900px) {
+  .header-content {
+    padding-left: 4.6rem;
+    padding-right: 4.6rem;
+  }
+
+  nav ul {
+    gap: 2.5rem;
+  }
+  
   .hero-content {
     padding: 2rem;
     margin-right: 40%;
   }
-
+  
   .hero-content h1 {
     font-size: 3.5rem;
   }
-
+  
   .hero-content p {
     font-size: 1.7em;
   }
 }
 
 @media (min-width: 1000px) {
-  
+  nav ul {
+    gap: 3rem;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -42,6 +106,12 @@
 
 @media (min-width: 1300px) {
   
+}
+
+@media (min-width: 1350px) {
+  .hero-content {
+    max-width: 1200px;
+  }
 }
 
 @media (min-width: 1400px) {
