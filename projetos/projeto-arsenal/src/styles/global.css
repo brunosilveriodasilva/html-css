@@ -13,6 +13,7 @@
   /* extras */
   --width-padrao: 1200px;
   --transition-transform: transform 0.2s ease;
+  --transition-base: all 0.3s ease;
 }
 
 * {
@@ -74,8 +75,11 @@ header {
 }
 
 nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   user-select: none;
-  transform: translateY(2px);
+  transform: translate(-50%, -50%);
 }
 
 nav ul {
@@ -101,40 +105,52 @@ nav ul li::before {
   margin-top: 2px;
   background: var(--branco-suave);
   border-radius: 0.5rem;
-  transition: width 0.3s ease;
+  transition: var(--transition-base);
 }
 
 nav ul li:hover::before {
   width: 100%;
 }
 
-.login {
-  width: 101.25px;
+.container-login {
+  width: 15rem;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .btn-login {
-  background: var(--branco-suave);
-  width: 100%;
-  height: 45px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 50%;
+  height: 100%;
   padding: 1rem;
-  border-radius: 3rem;
-  border: 0.2rem solid var(--quase-preto);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
   user-select: none;
   cursor: pointer;
-  color: black;
+  color: white;
   transition: all 0.3s ease;
 }
 
 .btn-login:active {
-  box-shadow: 0px 6px 0px #091c3b;
-  position: relative;
-  top: 2px;
 }
 
 .btn-login:hover {
-  background: #ffffff;
+  background: rgba(33, 115, 238, 0.4);
   transform: translateY(-2px);
+}
+
+.btn-signup {
+  height: 100%;
+  width: 50%;
+  align-self: center;
+  transition: var(--transition-base);
+}
+
+.btn-signup:hover {
+  color: rgb(52, 126, 238);
 }
 
 .hero-img {
@@ -151,11 +167,6 @@ nav ul li:hover::before {
 }
 
 .hero-content {
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.15),
-    rgba(0, 0, 0, 0.35)
-  );
   border-radius: 1rem;
   margin-top: 50px;
   margin-left: 10%;
