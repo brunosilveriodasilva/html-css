@@ -37,6 +37,10 @@
     padding-right: 4.2rem;
   }
 
+  .logo {
+    font-size: 3.7rem;
+  }
+
   nav ul {
     gap: 1.5rem;
   }
@@ -46,6 +50,10 @@
   .header-content {
     padding-left: 4.4rem;
     padding-right: 4.4rem;
+  }
+
+  .logo {
+    font-size: 3.9rem;
   }
 
   nav ul {
@@ -72,6 +80,10 @@
     padding-right: 4.6rem;
   }
 
+  .logo {
+    font-size: 4.1rem;
+  }
+
   nav ul {
     gap: 2.5rem;
   }
@@ -91,6 +103,10 @@
 }
 
 @media (min-width: 1000px) {
+  .logo {
+    font-size: 4.3rem;
+  }
+  
   nav ul {
     gap: 3rem;
   }
