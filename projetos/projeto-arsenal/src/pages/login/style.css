@@ -86,7 +86,7 @@ main {
 .login {
   display: flex;
   flex-flow: column nowrap;
-  gap: 1.2rem;
+  gap: 9px;
 }
 
 .inputs {
@@ -135,7 +135,7 @@ main {
   font-size: 1.6rem;
   display: flex;
   flex-flow: row nowrap;
-  gap: 4px;
+  gap: 8px;
 }
 
 .continue {
