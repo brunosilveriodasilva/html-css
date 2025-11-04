@@ -113,16 +113,16 @@ nav ul li:hover::before {
 }
 
 .btn-login {
-  background: #0051ca;
+  background: var(--branco-suave);
   width: 100%;
   height: 45px;
   padding: 1rem;
   border-radius: 3rem;
-  border: 0.2rem solid #0e2d5f;
-  box-shadow: 0px 6px 0px #091c3b;
+  border: 0.2rem solid var(--quase-preto);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   user-select: none;
   cursor: pointer;
+  color: black;
   transition: all 0.3s ease;
 }
 
@@ -133,7 +133,7 @@ nav ul li:hover::before {
 }
 
 .btn-login:hover {
-  background: #0048b4;
+  background: #ffffff;
   transform: translateY(-2px);
 }
 
