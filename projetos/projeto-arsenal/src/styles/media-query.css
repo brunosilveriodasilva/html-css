@@ -1,0 +1,29 @@
+@media (min-width: 800px) {
+  .hero-content {
+    padding: 1.5rem;
+    margin-right: 35%;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero-content {
+    padding: 2rem;
+    margin-right: 40%;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.7em;
+  }
+}
