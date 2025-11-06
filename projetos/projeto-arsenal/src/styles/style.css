@@ -141,7 +141,7 @@ nav ul li:hover::before {
 }
 
 .btn-login:hover {
-  background: rgba(33, 115, 238, 0.4);
+  background: hsla(80, 60%, 35%, 0.4);
 }
 
 .btn-signup {
