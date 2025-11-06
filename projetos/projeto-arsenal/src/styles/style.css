@@ -3,18 +3,23 @@
 :root {
   /* cores */
   --azul-principal: #2174ee;
-  --cinza-escuro: #2e3033;
   --cinza-media: #3a3e44;
   --azul-roxo: #3c3cc3;
-  --preto-profundo: #222020;
-  --quase-preto: #04040d;
-  --branco-suave: #f2f4f7;
+  --branco-suave: #F2F2F2;
+  --verda-claro: #6B8E23;
+  --verde-medio: #5A7A29;
+  --verde-escuro: #10160a;
+  --bege-areia: #C2B280;
+  --marrom: #584732;
+  --cinza-escuro: #2e3033;
+  --quase-preto: #1E1E1E;
 
   /* extras */
   --width-padrao: 1200px;
   --transition-transform: transform 0.2s ease;
   --transition-base: all 0.3s ease;
 }
+
 
 * {
   transition: all 0.3 linear;
@@ -34,8 +39,7 @@ header {
   font-family: "Poppins", sans-serif;
   backdrop-filter: blur(10px); 
   -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(128, 128, 128, 0.205);
-  -webkit-tap-highlight-color: transparent; 
+  -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none; 
   -moz-user-select: none;
   -ms-user-select: none; 
