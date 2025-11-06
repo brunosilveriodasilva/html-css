@@ -37,8 +37,9 @@ header {
   padding-bottom: 1.5rem;
   font-size: 1.6rem !important;
   font-family: "Poppins", sans-serif;
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px); 
+  -webkit-backdrop-filter: blur(23px);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none; 
   -moz-user-select: none;
@@ -175,7 +176,7 @@ nav ul li:hover::before {
 .hero-img {
   width: 100vw;
   height: 50vh;
-  background: url("../assets/img/hero-img.jpeg");
+  background: url("../assets/img/hero-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -187,6 +188,9 @@ nav ul li:hover::before {
 
 .hero-content {
   max-width: var(--width-padrao);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
   margin-top: 50px;
   margin-left: 10%;
   margin-right: 30%;
