@@ -47,6 +47,7 @@ header {
   user-select: none;
   display: flex;
   justify-content: center;
+  z-index: 100;
 }
 
 .header-content {
@@ -180,7 +181,6 @@ nav ul li:hover::before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border-bottom: 1px solid #04040d5e;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -203,4 +203,46 @@ nav ul li:hover::before {
 
 .hero-content p {
   font-size: 1.4rem;
+}
+
+.alert {
+  width: 100vw;
+}
+
+.alert-content {
+  background: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 56, 56));
+  border-top: 1px solid rgba(20, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(20, 0, 0, 0.6);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  color: var(--branco-suave);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 100;
+}
+
+.alert-content h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.countdown {
+  display: flex;
+  gap: 5px;
+}
+
+.countdown .numbers {
+  font-weight: 600;
+}
+
+main {
+  width: 100vw;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
 }
