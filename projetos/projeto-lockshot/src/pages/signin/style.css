@@ -6,7 +6,7 @@
   --cinza-media: #3a3e44;
   --azul-roxo: #3c3cc3;
   --branco-suave: #F2F2F2;
-  --verda-claro: #6B8E23;
+  --verde-claro: #6B8E23;
   --verde-medio: #5A7A29;
   --verde-escuro: #10160a;
   --bege-areia: #C2B280;
@@ -35,8 +35,9 @@
 }
 
 .back:hover {
- filter: brightness(0) invert(28%) sepia(94%) saturate(1700%) hue-rotate(235deg) brightness(90%) contrast(95%);
+  filter: brightness(0) invert(48%) sepia(29%) saturate(950%) hue-rotate(52deg) brightness(75%) contrast(90%);
 }
+
 
 .back-to-home img {
   width: 2rem;
@@ -124,7 +125,7 @@ main {
 }
 
 .inputs input:hover {
-  border: 1px solid var(--azul-roxo);
+  border: 1px solid var(--verde-medio);
 }
 
 .email {
@@ -145,11 +146,11 @@ main {
 }
 
 .continue {
-  background: var(--azul-roxo);
+  background: var(--verde-claro);
   width: 50%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding-top: 1rem;
-  border: 1px solid #31319e;
+  border: 1px solid #5a791e;
   border-radius: 5px;
   padding-bottom: 1rem;
   cursor: pointer;
@@ -158,7 +159,7 @@ main {
 }
 
 .continue:hover {
-  background-color: #31319e;
+  background-color: #5a791e;
 }
 
 .clear {
