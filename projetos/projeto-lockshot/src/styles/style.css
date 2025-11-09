@@ -280,6 +280,7 @@ main hr {
   -webkit-box-shadow: 10px 10px 32px -2px rgba(0,0,0,0.21);
   -moz-box-shadow: 10px 10px 32px -2px rgba(0,0,0,0.21);
   cursor: pointer;
+  user-select: none;
   display: flex;
   flex-flow: column nowrap;
   gap: 1rem;
@@ -319,7 +320,6 @@ main hr {
 
   display: flex;
   flex-flow: column nowrap;
-  gap:;
 }
 
 .old-price {
