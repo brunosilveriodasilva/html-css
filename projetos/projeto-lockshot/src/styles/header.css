@@ -1,0 +1,147 @@
+header {
+  position: fixed;
+  width: 100%;
+  color: var(--branco-suave);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.6rem !important;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(23px);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none; 
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: var(--width-padrao);
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  background: linear-gradient(to bottom, var(--branco-suave), #a1a5ad);
+  background-clip: text;
+  background-size: 100% 200%;
+  cursor: pointer;
+  font-size: 3.5rem;
+  font-weight: 600;
+  font-family: "Sedgwick Ave", cursive;
+  color: transparent;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.26);
+  user-select: none;
+  transform: translateY(4px);
+  transition: background-position 0.4s ease;
+}
+
+.logo:hover {
+  background-position: 0 100%;
+}
+
+nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+nav ul li {
+  position: relative;
+
+  cursor: pointer;
+}
+
+nav ul li::before {
+  content: "";
+  position: absolute;
+  background: var(--branco-suave);
+  width: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 2px;
+  margin-top: 2px;
+  border-radius: 0.5rem;
+  transform: translateX(-50%);
+  transition: var(--transition-base);
+}
+
+nav ul li:hover::before {
+  width: 100%;
+}
+
+.container-login {
+  width: 15rem;
+  font-weight: 500;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.btn-login {
+  background: var(--verde-claro);
+  width: 50%;
+  height: 100%;
+  padding: 8px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
+  user-select: none;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #55721c;
+}
+
+.btn-signup {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 50%;
+  padding: 8px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  transition: var(--transition-base);
+}
+
+.btn-signup::before {
+  content: '';
+  position: absolute;
+  background: var(--branco-suave);
+  width: 0;
+  bottom: 6px;
+  left: 50%;
+  right: 0;
+  height: 1px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+  transition: var(--transition-base);
+}
+
+.btn-signup:hover::before {
+  width: 78%;
+}
