@@ -26,7 +26,7 @@
 }
 
 html, body {
-  background: var(--verde-quase-preto);
+  background: var(--verde-escuro);
 }
 
 header {
@@ -37,8 +37,8 @@ header {
   padding-bottom: 1.5rem;
   font-size: 1.6rem !important;
   font-family: "Poppins", sans-serif;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3px); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px); 
   -webkit-backdrop-filter: blur(23px);
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none; 
@@ -124,15 +124,16 @@ nav ul li:hover::before {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  gap: 5px;
 }
 
 .btn-login {
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--verda-claro);
   width: 50%;
   height: 100%;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 8px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.6);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.192);
   user-select: none;
   cursor: pointer;
@@ -141,16 +142,20 @@ nav ul li:hover::before {
 }
 
 .btn-login:hover {
-  background: hsla(80, 60%, 35%, 0.4);
+  background: #55721c;
 }
 
 .btn-signup {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
   width: 50%;
-  align-self: center;
+  padding: 8px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   display: flex;
   justify-content: center;
+  align-self: center;
   transition: var(--transition-base);
 }
 
@@ -159,11 +164,10 @@ nav ul li:hover::before {
   position: absolute;
   background: var(--branco-suave);
   width: 0;
-  bottom: 0;
+  bottom: 6px;
   left: 50%;
   right: 0;
-  height: 2px;
-  margin-top: 3px;
+  height: 1px;
   border-radius: 5px;
   transform: translateX(-50%);
   transition: var(--transition-base);
@@ -296,4 +300,12 @@ main hr {
 
 .img001 {
   background-color: 0;
+}
+
+.product-description {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
 }
