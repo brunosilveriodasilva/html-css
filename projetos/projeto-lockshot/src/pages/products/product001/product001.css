@@ -1,0 +1,129 @@
+:root {
+  /* cores */
+  --azul-principal: #2174ee;
+  --cinza-media: #3a3e44;
+  --azul-roxo: #3c3cc3;
+  --branco-suave: #F2F2F2;
+  --verde-claro: #6B8E23;
+  --verde-medio: #5A7A29;
+  --verde-escuro: #10160a;
+  --verde-quase-preto: #0a0e06;
+  --bege-areia: #c2b798;
+  --marrom: #584732;
+  --cinza-escuro: #2e3033;
+  --quase-preto: #1E1E1E;
+
+  /* extras */
+  --width-padrao: 1200px;
+  --transition-transform: transform 0.2s ease;
+  --transition-base: all 0.3s ease;
+}
+
+header {
+  position: static; /* ou simplesmente remova essa linha, pois é o padrão */
+  display: block;   /* também é o padrão de um <header> */
+  width: 100%;
+  background: linear-gradient(to right, #1a240f, var(--verde-quase-preto));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
+
+main {
+    background: gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: var(--width-padrao);
+}
+
+.product {
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+.product-sobre {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+.stars {
+    font-size: 2rem;
+    
+    display: flex;
+    gap: 1rem;
+}
+
+.price-pix {
+    font-size: 2rem;
+}
+
+.price-card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price-card p {
+    font-size: 1.5rem;
+}
+
+.card {
+    width: 2rem;
+    height: 2rem;
+}
+
+.description {
+    font-size: 1.5rem;
+}
+
+.amount {
+    width: 100%;
+    user-select: none;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.amount-box {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.692);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-amount-box {
+    font-size: 1.5rem;
+    transform: translateY(1px);
+}
+
+.signs {
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+
+.signs img {
+  width: 2rem;
+  height: 2rem;
+  transform: translateY(2px);
+}
+
+.unit {
+    font-size: 1.5rem;
+}
+
+.unit-num {
+    font-weight: ;
+}

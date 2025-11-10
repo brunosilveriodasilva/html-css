@@ -1,15 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/reset.css"/>
-    <link rel="stylesheet" href="./../styles/global.css">
-    <link rel="stylesheet" href="product001.css">
-    <link rel="stylesheet" href="./../styles.header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../styles/reset.css" />
+    <link rel="stylesheet" href="../../../styles/global.css" />
+    <link rel="stylesheet" href="../../../styles/media-query.css" />
+    <link rel="stylesheet" href="../../../styles/header.css" />
+    <link rel="stylesheet" href="product001.css" />            
     <title>Produto</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">LockShot</div>
+        <nav>
+          <ul>
+            <li>Sobre</li>
+            <li>Produtos</li>
+            <li>Contato</li>
+          </ul>
+        </nav>
+        <div class="container-login">
+          <button class="btn-signup">
+            <a href="../../../../src/pages/signin/signin.html">Sign Up</a>
+          </button>
+          <button class="btn-login">
+            <a href="../../../../src/pages/login/login.html">Login</a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+        <main class="main-container">
+            <section class="product">
+                <div class="product-img">
+                    <div class="img">
+
+                    </div>
+                    <h1 class="title">
+                        ​Capacete Militar Histórico 1945
+                    </h1>
     
-</body>
+                    <div class="stars">
+                        <p>⭐⭐⭐⭐⭐</p>
+
+                        <p>
+                            2 avaliações
+                        </p>
+                    </div>
+                </div>
+
+                <div class="product-sobre">
+
+                    <div class="price">
+                        <p class="price-pix">
+                            R$ 2.327,99 no PIX
+                        </p>
+                        
+                        <div class="price-card">
+                            <img src="../../../assets/img/credit-card.png" alt="card" class="card">
+
+                            <p>R$ 2.499,99 no cartão</p>
+                        </div>
+                    </div>
+                    
+                    <div class="description">
+                        Peça de Colecionador com História. Uma relíquia autêntica que remete aos grandes conflitos. Ideal para reconstituição histórica e colecionismo militar de alto valor.
+                    </div>
+
+                    <div class="amount">
+                        <p>Quantidade</p>
+
+                        <div class="amount-box">
+                            <button class="signs" id="to-decrease"><img src="../../../assets/img/diminuir.png" alt=""></button>
+
+                            <p class="unit">
+                                <span id="unit-num"><strong>1</strong></span> unidade
+                            </p>
+
+                            <button class="signs" id="add"><img src="../../../assets/img/adicionar-botao.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+
+    <script src="../../../scripts/services/addunit.js"></script>
+  </body>
 </html>
